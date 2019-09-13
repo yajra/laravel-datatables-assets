@@ -1,6 +1,8 @@
 # WIP: Laravel DataTables Assets
 
-A collection of DataTables server-side scripts.
+A personal collection of DataTables server-side and client-side scripts.
+
+> Note: The scripts relies on bootstrap 4 styles. Use at your own risk. :)
 
 ## Installation
 
