@@ -20,6 +20,7 @@ require('laravel-datatables-assets/js/dataTables.buttons');
 ```php
 use Yajra\DataTables\Html\Button;
 
+Button::make('add'), // appends /create on current URL.
 Button::make('create')->editor('editor'),
 Button::make('edit')->editor('editor'),
 Button::make('remove')->editor('editor'),
