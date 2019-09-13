@@ -1,6 +1,6 @@
 $.fn.dataTable.ext.buttons.forceDelete = {
     extend: 'selected',
-    className: 'buttons-duplicate btn-danger',
+    className: 'buttons-force-delete btn-danger',
     text: '<i class="fa fa-trash"></i> Force Delete',
     action: function (e, dt, node, config) {
         dt.editor()
