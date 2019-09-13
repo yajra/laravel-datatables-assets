@@ -45,4 +45,6 @@ use Yajra\DataTables\Html\Column;
 
 Column::make('deleted_at')->render('$.fn.dataTable.render.boolean()'),
 Column::make('post_count')->render('$.fn.dataTable.render.badge()'),
+Column::make('working_hours')->render('$.fn.dataTable.render.suffix("hrs")'),
+Column::make('code')->render('$.fn.dataTable.render.prefix("Code:")'),
 ```
