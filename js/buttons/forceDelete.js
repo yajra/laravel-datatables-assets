@@ -7,7 +7,8 @@ $.fn.dataTable.ext.buttons.forceDelete = {
             .remove(dt.rows({selected: true}).indexes(), {
                 title: 'Force Delete Record(/s)',
                 message: function (e, dt) {
-                    let rows = dt.rows(e.modifier()).data().pluck('DT_RowId');
+                    let data = dt.rows(e.modifier()).data();
+                    let rows = data[0].hasOwnProperty('DTE_Remove') ? data.pluck('DTE_Remove') : data.pluck('DT_RowId')
                     return 'Are you sure you want to force delete the ' +
                         'following record(s)? <ul><li>' + rows.join('</li><li>') + '</li></ul>';
                 },
