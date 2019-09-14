@@ -1,5 +1,5 @@
-$.fn.dataTable.ext.buttons.duplicate = {
-    extend: 'selected',
+$.fn.dataTable.ext.buttons.duplicateSingle = {
+    extend: 'selectedSingle',
     className: 'buttons-duplicate btn-success',
     text: '<i class="fa fa-copy"></i> Duplicate',
     action: function (e, dt, node, config) {

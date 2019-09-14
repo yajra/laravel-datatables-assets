@@ -11,5 +11,6 @@ require('./buttons/print');
 require('./buttons/reset');
 require('./buttons/reload');
 require('./buttons/duplicate');
+require('./buttons/duplicateSingle');
 require('./buttons/forceDelete');
 require('./buttons/forceDeleteSingle');
