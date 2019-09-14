@@ -46,7 +46,14 @@ require('laravel-datatables-assets/js/dataTables.renderers');
 use Yajra\DataTables\Html\Column;
 
 Column::make('deleted_at')->render('$.fn.dataTable.render.boolean()'),
+Column::make('deleted_at')->renderJs('boolean()'),
+
 Column::make('post_count')->render('$.fn.dataTable.render.badge()'),
+Column::make('deleted_at')->renderJs('badge()'),
+
 Column::make('working_hours')->render('$.fn.dataTable.render.suffix("hrs")'),
+Column::make('working_hours')->renderJs('suffix', "hrs"),
+
 Column::make('code')->render('$.fn.dataTable.render.prefix("Code:")'),
+Column::make('code')->renderJs('prefix', "Code:"),
 ```
