@@ -26,6 +26,7 @@ Button::make('edit')->editor('editor'),
 Button::make('remove')->editor('editor'),
 Button::make('duplicate'),
 Button::make('forceDelete'), // Force delete a record.
+Button::make('forceDeleteSingle'), // Force delete a single record.
 Button::make('export'),
 Button::make('print'),
 Button::make('reset'),
