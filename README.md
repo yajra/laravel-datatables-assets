@@ -24,6 +24,7 @@ Button::make('add'), // appends /create on current URL.
 Button::make('create')->editor('editor'),
 Button::make('edit')->editor('editor'),
 Button::make('remove')->editor('editor'),
+Button::make('restore'),
 Button::make('duplicate'),
 Button::make('duplicateSingle'),
 Button::make('forceDelete'), // Force delete a record.

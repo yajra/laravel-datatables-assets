@@ -10,6 +10,7 @@ require('./buttons/pdf');
 require('./buttons/print');
 require('./buttons/reset');
 require('./buttons/reload');
+require('./buttons/restore');
 require('./buttons/duplicate');
 require('./buttons/duplicateSingle');
 require('./buttons/forceDelete');
