@@ -21,6 +21,12 @@ $.fn.dataTable.ext.buttons.url = {
     action: function (e, dt, node, config) {
         let data = dt.row({selected: true}).data();
         let key = config.data || 'DTE_URL';
-        window.location = data[key] || '#';
+        let url = data[key] || '#';
+
+        if (config.target == '_blank') {
+            window.open(url, '_blank')
+        } else {
+            window.location = url;
+        }
     }
 };
