@@ -1,3 +1,11 @@
+/**
+ * DataTables excel button.
+ *
+ * -- Laravel Integration --
+ *
+ * Button::make('excel')
+ *
+ */
 $.fn.dataTable.ext.buttons.excel = {
     className: 'buttons-excel btn-primary',
     text: '<i class="fa fa-file-excel-o" data-toggle="tooltip" data-title="Export to Excel"></i>',

@@ -1,3 +1,11 @@
+/**
+ * DataTables print button.
+ *
+ * -- Laravel Integration --
+ *
+ * Button::make('print')
+ *
+ */
 $.fn.dataTable.ext.buttons.print = {
     className: 'buttons-print btn-primary',
     text: '<i class="fa fa-print"></i>',

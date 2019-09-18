@@ -1,3 +1,11 @@
+/**
+ * DataTables reset button.
+ *
+ * -- Laravel Integration --
+ *
+ * Button::make('reset')
+ *
+ */
 $.fn.dataTable.ext.buttons.reset = {
     className: 'btn-primary',
     text: '<i class="fa fa-undo" data-toggle="tooltip" data-title="Clear Search"></i>',

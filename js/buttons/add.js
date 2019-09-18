@@ -1,3 +1,11 @@
+/**
+ * DataTables add button.
+ *
+ * -- Laravel Integration --
+ *
+ * Button::make('add')->text('<i class="fa fa-plus"></i> Add')
+ *
+ */
 $.fn.dataTable.ext.buttons.add = {
     className: 'buttons-add btn-success',
     text: '<i class="fa fa-plus"></i> New',

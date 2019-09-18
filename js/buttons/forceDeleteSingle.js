@@ -1,3 +1,11 @@
+/**
+ * DataTables forceDeleteSingle button.
+ *
+ * -- Laravel Integration --
+ *
+ * Button::make('forceDeleteSingle')->text('Permanently Delete Selected Record')
+ *
+ */
 $.fn.dataTable.ext.buttons.forceDeleteSingle = {
     extend: 'selectedSingle',
     className: 'buttons-force-delete btn-danger',

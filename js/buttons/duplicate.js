@@ -1,3 +1,11 @@
+/**
+ * DataTables duplicate button.
+ *
+ * -- Laravel Integration --
+ *
+ * Button::make('duplicate')
+ *
+ */
 $.fn.dataTable.ext.buttons.duplicate = {
     extend: 'selected',
     className: 'buttons-duplicate btn-success',

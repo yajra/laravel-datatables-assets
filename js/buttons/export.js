@@ -1,3 +1,11 @@
+/**
+ * DataTables export button.
+ *
+ * -- Laravel Integration --
+ *
+ * Button::make('export')
+ *
+ */
 $.fn.dataTable.ext.buttons.export = {
     extend: 'collection',
     className: 'btn-primary',
