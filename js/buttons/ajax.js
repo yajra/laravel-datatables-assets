@@ -11,6 +11,8 @@
  *
  * Button::make('ajax')
  *     ->text('Restore')
+ *     ->confirmation('Generic confirmation message.') // Optional if you want confirmation before proceeding.
+ *     ->onCancel('function(response) { alert('confirmation cancelled') }')
  *     ->onSuccess('function(response) { alert('success') }')
  *     ->onError('function(err) { alert('error') }')
  *     ->method('POST') // default ajax method is POST.
@@ -30,6 +32,14 @@ $.fn.dataTable.ext.buttons.ajax = {
         let data = dt.row({selected: true}).data();
         let url = data[(config.data || 'DTE_AJAX')] || '';
         let method = config.method || 'POST';
+
+        if (config.hasOwnProperty('confirmation')) {
+            if (! confirm(config.confirmation)) {
+                if (config.hasOwnProperty('onCancel')) config.onCancel();
+
+                return false;
+            }
+        }
 
         $.ajax({
             url: url,
