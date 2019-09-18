@@ -15,3 +15,4 @@ require('./buttons/duplicate');
 require('./buttons/duplicateSingle');
 require('./buttons/forceDelete');
 require('./buttons/forceDeleteSingle');
+require('./buttons/url');
