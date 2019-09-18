@@ -8,8 +8,8 @@
  * Button::make('ajaxBatch')
  *     ->text('Restore')
  *     ->url(route('batch-restore-action-url'))
- *     ->onSuccess('$.fn.dataTable.callbacks.swal')
- *     ->onError('$.fn.dataTable.callbacks.swal')
+ *     ->onSuccess('$.fn.dataTable.callbacks.success')
+ *     ->onError('$.fn.dataTable.callbacks.error')
  *
  * -- Response Format --
  * @see https://sweetalert2.github.io/#configuration for customized response.
