@@ -2,7 +2,6 @@
 
 require('./buttons/helper');
 require('./buttons/add');
-require('./buttons/remove');
 require('./buttons/export');
 require('./buttons/csv');
 require('./buttons/excel');
