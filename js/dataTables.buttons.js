@@ -16,3 +16,4 @@ require('./buttons/duplicateSingle');
 require('./buttons/forceDelete');
 require('./buttons/forceDeleteSingle');
 require('./buttons/url');
+require('./buttons/softDeletes');
