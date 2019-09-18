@@ -17,5 +17,6 @@ require('./buttons/forceDelete');
 require('./buttons/forceDeleteSingle');
 require('./buttons/url');
 require('./buttons/ajax');
+require('./buttons/ajaxBatch');
 require('./buttons/toggleScope');
 require('./buttons/softDeletes');
