@@ -11,15 +11,15 @@
  *
  * Button::make('ajax')
  *     ->text('Restore')
- *     ->onSuccess('function() { alert('success') }')
- *     ->onError('function() { alert('error') }')
+ *     ->onSuccess('function(response) { alert('success') }')
+ *     ->onError('function(err) { alert('error') }')
  *     ->method('POST') // default ajax method is POST.
  *
  * Button::make('ajax')
  *     ->text('Restore')
  *     ->data('restore_url')
- *     ->onSuccess('function() { alert('success') }')
- *     ->onError('function() { alert('error') }')
+ *     ->onSuccess('function(response) { alert('success') }')
+ *     ->onError('function(err) { alert('error') }')
  *
  */
 $.fn.dataTable.ext.buttons.ajax = {
