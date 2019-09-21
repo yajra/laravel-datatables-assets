@@ -2,6 +2,8 @@
 
 A personal collection of DataTables server-side and client-side scripts.
 
+![Preview](preview.png)
+
 > Note: The scripts relies on bootstrap 4 styles. Use at your own risk. :)
 
 ## Installation
