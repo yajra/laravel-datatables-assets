@@ -11,30 +11,30 @@ $.fn.dataTable.ext.buttons.forceDeleteSingle = {
     className: 'buttons-force-delete btn-danger',
     text: '<i class="fa fa-trash"></i> Force Delete',
     action: function (e, dt, node, config) {
-        dt.editor()
-            .remove(dt.rows({selected: true}).indexes(), {
-                title: 'Force Delete Record',
-                message: function (e, dt) {
-                    let row = dt.row( { selected: true } ).data() ;
-                    let msg = row.DTE_Remove || 'Are you sure you want to force delete record # ' + row.DT_RowId + '?'
-                    return msg;
-                },
-                buttons: [
-                    {
-                        text: '<i class="fa fa-trash"></i> Delete',
-                        className: 'btn btn-danger btn-editor-remove',
-                        action: function () {
-                            this.submit(null, null, function(data) {
-                                data.action = 'forceDelete';
-                            });
-                        }
-                    },
-                    {
-                        text: 'Cancel', className: 'btn btn-secondary ml-2', action: function () {
-                            this.close();
-                        }
+        let editor = config.editor || dt.editor();
+        editor.remove(dt.rows({selected: true}).indexes(), {
+            title: 'Force Delete Record',
+            message: function (e, dt) {
+                let row = dt.row({selected: true}).data();
+                let msg = row.DTE_Remove || 'Are you sure you want to force delete record # ' + row.DT_RowId + '?'
+                return msg;
+            },
+            buttons: [
+                {
+                    text: '<i class="fa fa-trash"></i> Delete',
+                    className: 'btn btn-danger btn-editor-remove',
+                    action: function () {
+                        this.submit(null, null, function (data) {
+                            data.action = 'forceDelete';
+                        });
                     }
-                ]
-            });
+                },
+                {
+                    text: 'Cancel', className: 'btn btn-secondary ml-2', action: function () {
+                        this.close();
+                    }
+                }
+            ]
+        });
     }
 };
