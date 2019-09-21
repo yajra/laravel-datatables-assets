@@ -1,3 +1,11 @@
+/**
+ * DataTables restore button.
+ *
+ * -- Laravel Integration --
+ *
+ * Button::make('restore')->text('Restore Selected Records')
+ *
+ */
 $.fn.dataTable.ext.buttons.restore = {
     extend: 'selected',
     className: 'buttons-restore btn-success',
