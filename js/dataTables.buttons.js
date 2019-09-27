@@ -1,6 +1,9 @@
 "use strict";
 
 require('./buttons/helper');
+require('./buttons/plugins');
+
+// Buttons
 require('./buttons/add');
 require('./buttons/export');
 require('./buttons/csv');
