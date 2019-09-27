@@ -15,6 +15,7 @@
  *
  */
 $.fn.dataTable.ext.buttons.url = {
+    name: 'url',
     extend: 'selectedSingle',
     className: 'buttons-url btn-secondary',
     text: 'URL Action (change me)',

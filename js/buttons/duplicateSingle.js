@@ -7,6 +7,7 @@
  *
  */
 $.fn.dataTable.ext.buttons.duplicateSingle = {
+    name: 'duplicateSingle',
     extend: 'selectedSingle',
     className: 'buttons-duplicate btn-success',
     text: '<i class="fa fa-copy"></i> Duplicate',

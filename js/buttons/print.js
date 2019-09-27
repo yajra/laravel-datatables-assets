@@ -7,6 +7,7 @@
  *
  */
 $.fn.dataTable.ext.buttons.print = {
+    name: 'print',
     className: 'buttons-print btn-primary',
     text: '<i class="fa fa-print"></i>',
     action: function (e, dt, button, config) {

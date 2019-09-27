@@ -7,6 +7,7 @@
  *
  */
 $.fn.dataTable.ext.buttons.reset = {
+    name: 'reset',
     className: 'btn-primary',
     text: '<i class="fa fa-undo" data-toggle="tooltip" data-title="Clear Search"></i>',
     action: function (e, dt, button, config) {

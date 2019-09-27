@@ -7,6 +7,7 @@
  *
  */
 $.fn.dataTable.ext.buttons.export = {
+    name: 'export',
     extend: 'collection',
     className: 'btn-primary',
     text: 'Export&nbsp;<span class="caret"/>',

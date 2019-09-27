@@ -13,6 +13,7 @@
  *
  */
 $.fn.dataTable.ext.buttons.ajaxBatch = {
+    name: 'ajaxBatch',
     extend: 'selected',
     className: 'buttons-ajax btn-secondary',
     text: 'Ajax Batch Action (Change Me)',

@@ -7,6 +7,7 @@
  *
  */
 $.fn.dataTable.ext.buttons.add = {
+    name: 'add',
     className: 'buttons-add btn-success',
     text: '<i class="fa fa-plus"></i> New',
     action: function (e, dt, button, config) {

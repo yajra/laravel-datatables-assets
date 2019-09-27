@@ -15,6 +15,7 @@
  *     scopes[onlyDeleted] = 0 / 1
  */
 $.fn.dataTable.ext.buttons.toggleScope = {
+    name: 'toggleScope',
     className: 'buttons-toggle btn-secondary',
     text: '<i class="fa fa-square"></i> Toggle',
     action: function (e, dt, node, config) {

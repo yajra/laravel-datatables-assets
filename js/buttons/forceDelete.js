@@ -7,6 +7,7 @@
  *
  */
 $.fn.dataTable.ext.buttons.forceDelete = {
+    name: 'forceDelete',
     extend: 'selected',
     className: 'buttons-force-delete btn-danger',
     text: '<i class="fa fa-trash"></i> Force Delete',

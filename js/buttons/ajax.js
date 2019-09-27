@@ -25,6 +25,7 @@
  *
  */
 $.fn.dataTable.ext.buttons.ajax = {
+    name: 'ajax',
     extend: 'selectedSingle',
     className: 'buttons-ajax btn-secondary',
     text: 'Ajax Action (Change Me)',

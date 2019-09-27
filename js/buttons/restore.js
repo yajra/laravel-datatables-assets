@@ -7,6 +7,7 @@
  *
  */
 $.fn.dataTable.ext.buttons.restore = {
+    name: 'restore',
     extend: 'selected',
     className: 'buttons-restore btn-success',
     text: '<i class="fa fa-undo"></i> Restore',

@@ -22,6 +22,7 @@
  *
  */
 $.fn.dataTable.ext.buttons.withTrashed = {
+    name: 'withTrashed',
     className: 'buttons-toggle btn-secondary',
     text: '<i class="fa fa-square"></i> Show Deleted',
     action: function (e, dt, node, config) {
@@ -61,6 +62,7 @@ $.fn.dataTable.ext.buttons.withTrashed = {
  *
  */
 $.fn.dataTable.ext.buttons.onlyTrashed = {
+    name: 'onlyTrashed',
     className: 'buttons-toggle btn-secondary',
     text: '<i class="fa fa-square"></i> Only Deleted',
     action: function (e, dt, node, config) {
