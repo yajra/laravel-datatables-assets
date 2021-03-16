@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-version=0.0.2
+version=0.0.3
 
 echo "Publishing version $version"
 
