@@ -14,7 +14,7 @@ $.fn.dataTable.ext.buttons.forceDeleteSingle = {
     action: function (e, dt, node, config) {
         let editor = config.editor || dt.editor();
         editor.remove(dt.rows({selected: true}).indexes(), {
-            title: 'Force Delete Record',
+            title: config.formTitle || 'Force Delete Record',
             message: function (e, dt) {
                 let row = dt.row({selected: true}).data();
                 let msg = row.DTE_Remove || 'Are you sure you want to force delete record # ' + row.DT_RowId + '?'

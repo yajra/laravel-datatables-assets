@@ -14,7 +14,7 @@ $.fn.dataTable.ext.buttons.restore = {
     action: function (e, dt, node, config) {
         let editor = config.editor || dt.editor();
         editor.remove(dt.rows({selected: true}).indexes(), {
-            title: 'Restore Record',
+            title: config.formTitle || 'Restore Record',
             message: function (e, dt) {
                 let row = dt.row({selected: true}).data();
                 let msg = row.DTE_Restore || 'Are you sure you want to restore record # ' + row.DT_RowId + '?'
