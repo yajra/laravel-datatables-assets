@@ -28,4 +28,4 @@ over other users requests/tickets.
 - Operating System
 - PHP Version
 - Laravel Version
-- laravel-Datatables-Assets Version
+- Laravel-Datatables-Assets Version
